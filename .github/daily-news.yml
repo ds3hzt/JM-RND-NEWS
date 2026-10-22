@@ -1,4 +1,4 @@
-name: JM R&D Daily News
+workflows/daily-news.yml
 
 on:
   schedule:
