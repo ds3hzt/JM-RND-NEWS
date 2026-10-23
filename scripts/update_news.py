@@ -81,7 +81,20 @@ def generate(items):
     if not key: raise RuntimeError('OPENAI_API_KEY secret 미설정: 뉴스 게시를 건너뜁니다.')
     count=min(5,len(items))
     # Use Chat Completions with strict JSON format; supplied URLs must be chosen verbatim from the RSS list.
-    payload={'model':os.getenv('OPENAI_MODEL','gpt-4.1-mini'),'temperature':0.2,'response_format':{'type':'json_object'},'messages':[{'role':'system','content':(f'당신은 한국 정밀 전기도금 기술 뉴스 편집자입니다. 제공된 RSS 후보에서만 사실을 선택합니다. 후보의 제목과 날짜만으로 확인 불가능한 수치, 성능, 인용, 계약은 추측하지 않습니다. 서로 다른 사건의 뉴스 1~{count}건을 추천합니다. 후보가 적으면 있는 후보만 추천하고, 국내/해외 균형은 가능한 범위에서만 고려합니다. 같은 기업의 같은 전시회나 발표를 다룬 기사는 하나만 선정. 최근성 우선, 전날 뉴스와 중복 제외. source는 후보 URL을 글자 하나도 변경하지 않고 사용. JSON 객체 {"articles":[{"date":"YYYY-MM-DD","region":"국내 또는 해외","category":"도금기술/전자부품/친환경·회수/자동화·검사/산업동향 중 하나","title":"...","summary":"확인 가능한 사실만 2~3문장","keywords":["..."],"background":"일반 기술 배경","impact":"도금 현장 적용 시사점 (추론 표시)","source":"https://..."}]} 형식만 출력. 기사 본문은 제공되지 않았으므로 RSS 제목에서 검증되지 않은 구체 수치는 쓰지 마세요.')},{'role':'user','content':json.dumps({'date':TODAY,'candidates':items},ensure_ascii=False)}]}
+    system_prompt = (
+        '당신은 한국 정밀 전기도금 기술 뉴스 편집자입니다. 제공된 RSS 후보에서만 사실을 선택합니다. '
+        '후보의 제목과 날짜만으로 확인 불가능한 수치, 성능, 인용, 계약은 추측하지 않습니다. '
+        '서로 다른 사건의 뉴스 1~{count}건을 추천합니다. 후보가 적으면 있는 후보만 추천하고, '
+        '국내/해외 균형은 가능한 범위에서만 고려합니다. 같은 기업의 같은 전시회나 발표를 다룬 기사는 하나만 선정. '
+        '최근성 우선, 전날 뉴스와 중복 제외. source는 후보 URL을 글자 하나도 변경하지 않고 사용. '
+        'JSON 객체 {"articles":[{"date":"YYYY-MM-DD","region":"국내 또는 해외",'
+        '"category":"도금기술/전자부품/친환경·회수/자동화·검사/산업동향 중 하나",'
+        '"title":"...","summary":"확인 가능한 사실만 2~3문장","keywords":["..."],'
+        '"background":"일반 기술 배경","impact":"도금 현장 적용 시사점 (추론 표시)",'
+        '"source":"https://..."}]} 형식만 출력. 기사 본문은 제공되지 않았으므로 '
+        'RSS 제목에서 검증되지 않은 구체 수치는 쓰지 마세요.'
+    ).replace('{count}', str(count))
+    payload={'model':os.getenv('OPENAI_MODEL','gpt-4.1-mini'),'temperature':0.2,'response_format':{'type':'json_object'},'messages':[{'role':'system','content':system_prompt},{'role':'user','content':json.dumps({'date':TODAY,'candidates':items},ensure_ascii=False)}]}
     req=urllib.request.Request('https://api.openai.com/v1/chat/completions',data=json.dumps(payload).encode(),headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
     with urllib.request.urlopen(req,timeout=100) as r: response=json.load(r)
     return json.loads(response['choices'][0]['message']['content'])['articles']
