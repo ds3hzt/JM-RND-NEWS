@@ -1,5 +1,74 @@
 [
   {
+    "date": "2026-10-28",
+    "region": "해외",
+    "category": "도금기술",
+    "title": "Ajinomoto Unveils Advanced ABF Technologies at 2026 IMPACT",
+    "summary": "Ajinomoto introduced advanced ABF (Ajinomoto Build-up Film) technologies targeting AI packaging materials bottlenecks at the 2026 IMPACT event. The innovations aim to support next-generation semiconductor packaging needs.",
+    "keywords": [
+      "Ajinomoto",
+      "ABF",
+      "AI packaging",
+      "semiconductor packaging"
+    ],
+    "background": "ABF materials are critical insulating layers used in semiconductor substrates for advanced packaging, impacting electrical performance and reliability.",
+    "impact": "The new ABF technologies could alleviate material bottlenecks in AI chip packaging, enhancing production efficiency and device performance.",
+    "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQb2tyRm5yMVg1YUozem54WURDRWZfbmJxemRiVkZTNXM1VFpfR3FtOHpSWDZTZ244c3lrUmpxWDBUOEdlSHZubklEa1gxTFpYRFpiVU8wU0hFTTBjd3JKd01GWENMWnBsMnMyYWxwNW9Rb3dCTmoxdnlseDZpdU5wZlBkOTRHLTA4?oc=5",
+    "published": "2026-10-25"
+  },
+  {
+    "date": "2026-10-28",
+    "region": "해외",
+    "category": "도금기술",
+    "title": "Kinsus Technology Presents AI Chip Substrate Innovations at 2026 IMPACT",
+    "summary": "Kinsus Technology showcased advancements in AI chip substrate manufacturing, including scaling of advanced packaging, ABF material innovations, and challenges in next-generation glass core production at 2026 IMPACT. These developments address evolving semiconductor substrate demands.",
+    "keywords": [
+      "Kinsus Technology",
+      "AI chip substrate",
+      "ABF materials",
+      "glass core manufacturing"
+    ],
+    "background": "Substrate materials and manufacturing processes are key to semiconductor package performance, especially for AI chips requiring high density and reliability.",
+    "impact": "Innovations may improve substrate quality and production scalability, supporting AI semiconductor industry growth and enabling more complex packaging.",
+    "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxZDA4M1pCcDZOb1A1aW5NV1ZWamRERTh1T3djb0NDSzhWbzF3Um1RLXdrckVkTW03al9GWWxjdVRJcmliZlhWZ0xCMzJvUUctZVJueDNNSGRkNWUtdDVNRGdHOTBnS1FMaFdUMllObnhVX3NfM2U1YlpLaGlkQjg?oc=5",
+    "published": "2026-10-21"
+  },
+  {
+    "date": "2026-10-28",
+    "region": "해외",
+    "category": "도금기술",
+    "title": "MKS' Atotech and ESI to Showcase Advanced PCB Solutions at TPCA 2026",
+    "summary": "At the TPCA 2026 exhibition, MKS' Atotech and ESI will present their latest advanced printed circuit board (PCB) solutions. These innovations focus on improving PCB manufacturing processes and materials to meet growing industry demands.",
+    "keywords": [
+      "MKS",
+      "Atotech",
+      "ESI",
+      "PCB",
+      "TPCA 2026"
+    ],
+    "background": "Advanced PCB technologies are essential for supporting complex electronic devices, requiring precise plating and surface finishing techniques.",
+    "impact": "The showcased solutions could enhance PCB quality and production efficiency, benefiting electronics manufacturing sectors.",
+    "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ReDNkaVpvWEFQMVVwclFUNHRHZVkxS1FVc2FqTTMxc2pSMkdHdHZUd3JtT0hSaFpxRDY3UVRNcTBsQzZPaGZ5UVYxNzRrcnBxMGxpYm85ZmlqdE5IS19vMVpMLWpXaC1Z?oc=5",
+    "published": "2026-10-19"
+  },
+  {
+    "date": "2026-10-28",
+    "region": "해외",
+    "category": "도금기술",
+    "title": "Kools Applies Mussel Adhesion Principles to Overcome TGV Copper Coating Challenges",
+    "summary": "Kools has developed a novel approach leveraging mussel adhesion principles to address copper coating bottlenecks in Through Glass Via (TGV) technology. This advancement aims to improve coating reliability and performance in semiconductor packaging.",
+    "keywords": [
+      "Kools",
+      "mussel adhesion",
+      "TGV",
+      "copper coating"
+    ],
+    "background": "TGV technology requires uniform and reliable copper plating inside glass vias for advanced semiconductor interconnects, which is technically challenging.",
+    "impact": "This bio-inspired solution may enhance copper plating quality in TGV substrates, facilitating better electrical connectivity and device yield.",
+    "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05WHNXbDdZVW9ZYlR6YjZZT2ZZbWhNVVN2M192cThRSGxTd2dhMEVFZ3plNTZKNVJ5YnRsdjZ6VDZGLUZIbDhsUTctNVdGaHJSeWI0c0pLUUZjeHEzaWx0Q3c2RjBTUVk?oc=5",
+    "published": "2026-10-05"
+  },
+  {
     "date": "2026-10-27",
     "region": "국내",
     "category": "산업동향",
