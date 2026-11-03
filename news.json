@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-11-03",
+    "region": "국내",
+    "category": "산업동향",
+    "title": "태성 김종학 대표 \"AI 반도체 열풍에 장비 수요 급증…매출 1조 정조준\"",
+    "summary": "태성의 김종학 대표는 AI 반도체 시장의 성장으로 인해 장비 수요가 급증하고 있다고 밝혔다. 회사는 매출 1조 원 달성을 목표로 하고 있다.",
+    "keywords": [
+      "태성",
+      "AI 반도체",
+      "장비 수요",
+      "매출 목표"
+    ],
+    "background": "AI 반도체 산업의 성장에 따라 관련 장비 수요가 증가하는 추세이다.",
+    "impact": "반도체 장비 업체들은 AI 반도체 시장 확대에 맞춰 생산 및 기술 개발에 집중할 필요가 있다.",
+    "source": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HYjdJdExpSDltd2J2d1BWbUVqbUtqMG1acmRIbTN0S2RpalB0dUhGaWFYTFlYdjNxMWUzWE5NSGh0UFJFUC1Bc1BwVDI1Ui15bnpPNHFROC1Vc2lyUU43UnUtYjJfckE?oc=5",
+    "published": "2026-11-03"
+  },
+  {
+    "date": "2026-11-03",
+    "region": "국내",
+    "category": "산업동향",
+    "title": "한화이센셜, 유리기판 사업 '고삐'…인력채용·핵심 공정 개발 나서",
+    "summary": "한화이센셜은 유리기판 사업 강화를 위해 인력 채용과 핵심 공정 개발에 나섰다. 이는 사업 경쟁력 확보를 위한 전략적 움직임이다.",
+    "keywords": [
+      "한화이센셜",
+      "유리기판",
+      "인력 채용",
+      "공정 개발"
+    ],
+    "background": "유리기판은 전자부품 및 디스플레이 제조에 필수적인 소재이다.",
+    "impact": "유리기판 공정 기술 개발은 전자부품 품질 향상과 생산 효율성 증대에 기여할 수 있다.",
+    "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1xNEJ2c1JDdlRYSnJkWWtMbHNzQXk4WTc0WmF5cTZDdWtTWmZ6cGFNdXB3c2diWG5aSURXQWRJWUt5dmpLdUo2bHQzdzZMVmhydk1NUTV3?oc=5",
+    "published": "2026-11-03"
+  },
+  {
     "date": "2026-11-02",
     "region": "해외",
     "category": "도금기술",
